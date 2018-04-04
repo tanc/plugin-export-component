@@ -1,0 +1,38 @@
+{
+  "name":             "tanc/plugin-export-component",
+  "description":      "Exports a single component as a zip file",
+  "keywords":         ["twig", "pattern lab"],
+  "homepage":         "http://patternlab.io",
+  "license":          "MIT",
+  "type":             "patternlab-plugin",
+  "authors": [
+    {
+      "name":         "Tancredi D'Onofrio,
+      "homepage":     "http://tanc.me",
+      "role":         "Senior Developer"
+    }
+  ],
+  "support": {
+    "issues":         "https://github.com/tanc/plugin-export-component/issues",
+    "source":         "https://github.com/tanc/plugin-export-component/releases"
+  },
+  "autoload": {
+    "psr-0": {
+      "PatternLab\\TwigNamespaces": "src/"
+    }
+  },
+  "require": {
+    "php":              ">=5.4"
+  },
+  "extra": {
+    "patternlab": {
+      "config": {
+        "plugins": {
+          "export_component": {
+            "enabled": true
+          }
+        }
+      }
+    }
+  }
+}
